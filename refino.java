@@ -21,6 +21,8 @@ public class refino extends materias {
         System.out.println("Insira o valor total:");
         double valortotal = sc.nextDouble();
 
+        sc.close();
+
 
         refino objRefino = new refino(nome, cidade, valorunidade, valortotal);
 
@@ -31,6 +33,6 @@ public class refino extends materias {
         System.out.println("Valor da unidade: " + objRefino.getValorunidade());
         System.out.println("Valor total: " + objRefino.getValortotal());
         System.out.println("Quantidade: " + objRefino.getQuantidade());
-        sc.close();
+        
     }
 }
